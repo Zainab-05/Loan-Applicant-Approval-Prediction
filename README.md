@@ -1,4 +1,5 @@
 📌 Loan Applicant Approval Prediction
+
 📁 Project Overview
 
 This project analyzes and predicts loan approval outcomes using applicant demographics, financial indicators, and credit history.
