@@ -10,21 +10,6 @@ The objective is to build a reliable prediction model that supports credit risk�
 
 The dataset includes historical loan applicants with demographic, financial, and loan-related attributes.
 
-Key Columns
-Column	Description
-Gender	Applicant gender
-Married	Marital status
-Dependents	Number of dependents
-Education	Graduate / Not Graduate
-Self_Employed	Employment status
-ApplicantIncome	Income of applicant
-CoapplicantIncome	Income of co-applicant
-LoanAmount	Requested loan amount
-Loan_Amount_Term	Loan duration (months)
-Credit_History	Repayment track record (1 = good)
-Property_Area	Urban / Semi-urban / Rural
-Loan_Status	Target variable (Y = Approved, N = Rejected)
-
 The dataset contains some missing values that are cleaned during preprocessing.
 
 📒 Notebook 1 — Credit Risk Analysis
@@ -113,6 +98,4 @@ credit-risk-eda.ipynb
 
 loan-applicant-prediction-model.ipynb
 
-Just tell me!
 
-ChatGPT can make mistakes. Check importa
