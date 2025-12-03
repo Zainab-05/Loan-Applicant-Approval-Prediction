@@ -1,14 +1,14 @@
 📌 Loan Applicant Approval Prediction
 📁 Project Overview
 
-This project focuses on analyzing and predicting loan approval outcomes based on applicant demographics, financial indicators, and credit history.
-Using two structured Jupyter Notebooks, the workflow moves from data exploration and preprocessing to model development and performance evaluation.
+This project analyzes and predicts loan approval outcomes using applicant demographics, financial indicators, and credit history.
+Using two structured Jupyter Notebooks, the workflow moves from data exploration & preprocessing to model development and performance evaluation.
 
-The objective is to build a reliable model that helps identify which applicants are more likely to be approved, supporting credit risk decision-making.
+The objective is to build a reliable prediction model that supports credit risk–based decision-making.
 
 📂 Dataset Description
 
-The dataset contains records of past loan applicants, along with their personal, financial, and loan-related attributes.
+The dataset includes historical loan applicants with demographic, financial, and loan-related attributes.
 
 Key Columns
 Column	Description
@@ -16,68 +16,103 @@ Gender	Applicant gender
 Married	Marital status
 Dependents	Number of dependents
 Education	Graduate / Not Graduate
-Self_Employed	Work status
-ApplicantIncome	Monthly income of the applicant
-CoapplicantIncome	Monthly income of co-applicant
+Self_Employed	Employment status
+ApplicantIncome	Income of applicant
+CoapplicantIncome	Income of co-applicant
 LoanAmount	Requested loan amount
-Loan_Amount_Term	Loan duration (in months)
-Credit_History	Credit repayment history (1 = good, 0 = bad)
-Property_Area	Applicant’s location type
+Loan_Amount_Term	Loan duration (months)
+Credit_History	Repayment track record (1 = good)
+Property_Area	Urban / Semi-urban / Rural
 Loan_Status	Target variable (Y = Approved, N = Rejected)
 
-The dataset is moderately clean but contains missing values that are handled during preprocessing.
+The dataset contains some missing values that are cleaned during preprocessing.
 
-📒 Notebook 1 — Credit Risk Analysis 
+📒 Notebook 1 — Credit Risk Analysis
 
-This notebook focuses on understanding the data and preparing it for modeling.
+File: credit-risk-eda.ipynb
+
+This notebook performs detailed exploratory data analysis and prepares the dataset for model building.
 
 🔍 Steps Covered
 
 Importing and inspecting the dataset
-Handling missing values (mean/median for numeric, mode for categorical)
-Visualizing income distribution, credit history patterns, loan amounts
-Generating pairplots & correlation heatmaps
+
+Handling missing values (numeric + categorical)
+
+Visualizing income distributions, credit history trends, loan amounts
+
+Generating pairplots and correlation heatmaps
+
 Encoding categorical variables
-Outlier detection and basic feature scaling
+
+Detecting outliers
+
+Basic feature scaling
+
 Splitting data into training and test sets
 
 🎯 Key Insights
 
-Credit history is the strongest predictor of approval
-Higher applicant income tends to correlate with higher approval
-Urban applicants show slightly better approval ratios
-Loan amount and loan term impact approval quality
-The output of this notebook is a fully cleaned and transformed dataset ready for model training.
+Credit history is the strongest driver of approval
+
+Higher applicant income increases approval likelihood
+
+Urban applicants show slightly higher approval ratios
+
+Loan amount and term influence loan approval quality
+
+Output → A fully cleaned and transformed dataset ready for modeling.
 
 📘 Notebook 2 — Loan Application Prediction Model
-This notebook focuses on training multiple models and evaluating which performs best for the approval prediction task.
+
+File: loan-applicant-prediction-model.ipynb
+
+This notebook builds and evaluates multiple machine learning models to predict loan approval.
 
 🤖 Models Implemented
+
 Logistic Regression
+
 Decision Tree Classifier
+
 Random Forest Classifier
+
 XGBoost
 
 📊 Evaluation Metrics
 
 Accuracy Score
+
 Confusion Matrix
-Classification Report (Precision, Recall, F1-score)
-Feature Importance plots
+
+Precision, Recall, F1-Score
+
+Feature Importance Visualization
 
 🏆 Best Performing Model
-The Random Forest model delivers the most stable and accurate predictions, achieving ~80–85% accuracy, depending on hyperparameters and preprocessed features.
+
+The Random Forest Classifier delivers the most stable performance with an accuracy of ~80–85%, depending on parameter tuning and processed features.
 
 🧠 What This Project Demonstrates
-Ability to clean and preprocess real-world data
-Understanding of credit risk–related variables
-Comparing multiple ML models for classification
-Identifying important drivers of loan approval
-Structuring work clearly across notebooks for readability
 
+Ability to clean and preprocess real-world datasets
 
-Open the notebooks in order:
+Understanding of credit-risk-related variables
 
-1 credit-risk-eda.ipynb
-2 loan-applicant-prediction-model.ipynb
+Comparing multiple classification models
 
+Identifying top drivers influencing approval decisions
+
+Structuring work across separate notebooks for clarity and reproducibility
+
+▶️ How to Use This Repository
+
+Open the notebooks in the following order:
+
+credit-risk-eda.ipynb
+
+loan-applicant-prediction-model.ipynb
+
+Just tell me!
+
+ChatGPT can make mistakes. Check importa
